@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#fs{
+    width: 100%;
+    height: 100%;
+    background-color: #2f3e46;
+    color: #cad2c5;
+}
+
+#fs #topHeading{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#topHeading h1{
+    font-size: 150px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#elem{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 0px;
+    background-color: #52796f;
+}
+
+#watch{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 0;
+    background-color: #cad2c5;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#watch #content{
+    margin: 100px auto;
+    text-align: center;
+}
+
+#watch #content h1{
+    font-size: 4em;
+    color: #2f3e46;
+}
+
+p{
+    font-size: 5em;
+    color: #2f3e46;
+}
+
+button{
+    border: none;
+    padding: 18px 10px;
+    font-size: 1.5em;
+    width: 180px;
+    margin: 10px;
+    background-color: #354f52;
+    color: #cad2c5;
+}
+
+button:hover{
+    cursor: pointer;
+    border-color: #9a8c98;
+    background: #52796f;
+    color: #2f3e46;
+    box-shadow: 0 0.5em 0.5em -0.4em #2f3e46; 
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Use viewport units for height */
+    }
+    
+    #fs {
+        width: 100%;
+        height: 100vh; /* Use viewport units for height */
+        background-color: #2f3e46;
+        color: #cad2c5;
+    }
+    
+    #elem,
+    #watch {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 0; /* Use viewport units for height */
+    } 
+}
+
+@media screen and (max-width: 430px) {
+    #main {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Use viewport units for height */
+    }
+    
+    #fs {
+        width: 100%;
+        height: 100vh; /* Use viewport units for height */
+        background-color: #2f3e46;
+        color: #cad2c5;
+    }
+    
+    #elem,
+    #watch {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 0; /* Use viewport units for height */
+    }  
+    #topHeading h1 {
+        font-size: 18vw;
+    }
+
+    #watch #content h1 {
+        font-size: 10vw;
+    }
+
+    p {
+        font-size: 8vw;
+    }
+
+    button {
+        padding: 4vw 3vw;
+        font-size: 6vw;
+        width: 50%;
+    }
+}
